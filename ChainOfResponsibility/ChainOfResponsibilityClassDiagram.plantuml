@@ -1,0 +1,47 @@
+@startuml Test
+class RuleEngine {
+    #Rule first
+    +bool ExecuteRule(Request r)
+}
+note as Main
+1. Specify order of rules
+by instantiating rule Classes
+in required order
+2. Instantiate RuleEngine with 
+first rule to run
+3. Call ExecuteRule in RuleEngine
+with UserRequest
+end note
+
+abstract class Rule {
+    #Rule next
+    +bool ExecuteRule(Request r)
+    +bool {abstract} RunRule(Request r)
+}
+note right: Recursive call to ExecuteRule
+
+class AccountBalanceRule {
+    #Rule next
+    +bool RunRule(Request r)
+}
+
+class AccountActiveRule {
+    #Rule next
+    +bool RunRule(Request r)
+}
+
+class CreditScoreRule {
+    #Rule next
+    +bool RunRule(Request r)
+}
+note top
+next will be null here 
+as this is last rule to run
+end note
+
+Rule <|-- AccountBalanceRule
+Rule <|-- AccountActiveRule
+Rule <|-- CreditScoreRule
+RuleEngine *-- Rule
+Rule -> Rule
+@enduml
