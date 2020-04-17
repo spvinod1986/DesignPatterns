@@ -18,7 +18,7 @@ namespace State
 
         public void ProcessLoan(string username, decimal amount)
         {
-            System.Console.WriteLine($"Checking eligibility for Business Loan for {username}");
+            System.Console.WriteLine($"Processing Business Loan for {username}");
         }
     }
 }

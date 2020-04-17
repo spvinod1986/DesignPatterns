@@ -7,7 +7,7 @@ namespace State
         public decimal CalculatePremium(string username, int interval)
         {
             System.Console.WriteLine($"Calculating premium for Home Loan for {username}");
-            return 1000.00m;
+            return 1;
         }
 
         public bool CheckLoanEligibility(string username)
@@ -18,7 +18,7 @@ namespace State
 
         public void ProcessLoan(string username, decimal amount)
         {
-            System.Console.WriteLine($"Checking eligibility for Home Loan for {username}");
+            System.Console.WriteLine($"Processing Home Loan for {username}");
         }
     }
 }
