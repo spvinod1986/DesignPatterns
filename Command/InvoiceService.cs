@@ -5,25 +5,25 @@ namespace Command
 {
     public class InvoiceService
     {
-        private readonly List<Product> _products;
-        public int TotalCountofProducts => _products.Count;
+        public List<Product> Products { get; set; }
+        public int TotalCountofProducts => Products.Count;
 
-        public decimal TotalPrice => _products.Select(p => p.Price).Sum();
+        public decimal TotalPrice => Products.Select(p => p.Price).Sum();
 
         public InvoiceService()
         {
-            _products = new List<Product>();
+            Products = new List<Product>();
         }
 
         public void AddProductToInvoice(Product product)
         {
-            _products.Add(product);
+            Products.Add(product);
             System.Console.WriteLine($"Product {product.Name} is added to invoice");
         }
 
         public void RemoveProductFromInvoice(Product product)
         {
-            _products.Remove(product);
+            Products.Remove(product);
             System.Console.WriteLine($"Product {product.Name} is removed from invoice");
         }
     }

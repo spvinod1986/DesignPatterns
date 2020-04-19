@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Memento/bin/Debug/netcoreapp3.0/Memento.dll",
+            "program": "${workspaceFolder}/Command/bin/Debug/netcoreapp3.0/Command.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Memento",
+            "cwd": "${workspaceFolder}/Command",
             "console": "internalConsole",
             "stopAtEntry": false
         },
