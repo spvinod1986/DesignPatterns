@@ -6,8 +6,8 @@ Common communication pattern between objects.
 * Chain of Responsibility: 
     - Execute tasks in chain to process a request.
 * Memento: 
+    - Captures an object's internal state and restore states as required. 
     - To implement Undo mechanism.
-    - Captures an object's internal state and restore if required. 
     - Snapshot history of object is used to restore.
 * State: 
     - Object changes behaviour based on internal state.
@@ -18,4 +18,12 @@ Common communication pattern between objects.
 * Template: 
     - Super class template method defines skeleton of algorithm. 
     - Child classes implement/override specific tasks as required.
+* Command:
+    - No dependency between Client/Sender and Receiver
+    - The command object encapsulates all information required to perform an action
+    - Record all actions(queue) and run it once - Composite Command
+    - To implement undo mechanism
+* Observer:
+    - Notify changes to any number of classes
+    - Publisher Subscriber relationship
 
