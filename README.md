@@ -26,4 +26,6 @@ Common communication pattern between objects.
 * Observer:
     - Notify changes to any number of classes
     - Publisher Subscriber relationship
+* Mediator:
+    - A mediator to manage communication between all classes
 
