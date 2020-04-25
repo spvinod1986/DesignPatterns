@@ -28,4 +28,8 @@ Common communication pattern between objects.
     - Publisher Subscriber relationship
 * Mediator:
     - A mediator to manage communication between all classes
+    - Helps to manage many to many relationship between classes
+* Visitor:
+    - Abstract operation/functionality that should be applied to hierarchy of objects
+    - New functionality will go to new operation class instead of modifying existing class
 
