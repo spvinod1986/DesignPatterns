@@ -42,4 +42,7 @@ Common patterns to simplify Relationship between objects.
     - eg. Folder is collection of file and another folder can be collection of folders. 
     - eg. Deleting folder deletes all in its hierarchy
     - Recursive Composition
+* Adapter:
+    - To convert interface of an object to different form
+    - Lets objects work together who have incompatible interfaces
 
