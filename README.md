@@ -1,7 +1,7 @@
 # Design Patterns
 This project demonstrates common design patterns and object oriented programming principles with examples.
 
-## Behavioral Patterns:
+## Behavioural Patterns:
 Common Communication/Interaction pattern between objects.
 
 * Chain of Responsibility: 
@@ -50,4 +50,7 @@ Common patterns to simplify Relationship between objects.
     - It helps to favor composition over inheritance.
     - Recursive wrapping of objects.
     - Good alternative to subclassing for extending functionality. 
+* Facade:
+    - To provide simple interface (as a face) for complex system.
+    - Defines higher level interface to make system easy to use.
 
