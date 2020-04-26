@@ -40,9 +40,14 @@ Common patterns to simplify Relationship between objects.
 * Composite:
     - To represent a hierarchy and treat the objects in the hierarchy in same way.
     - eg. Folder is collection of file and another folder can be collection of folders. 
-    - eg. Deleting folder deletes all in its hierarchy
-    - Recursive Composition
+    - eg. Deleting folder deletes all in its hierarchy.
+    - Recursive Composition.
 * Adapter:
-    - To convert interface of an object to different form
-    - Lets objects work together who have incompatible interfaces
+    - To convert interface of an object to different form.
+    - Lets objects work together who have incompatible interfaces.
+* Decorator:
+    - Add additional behaviour or responsibility to an object.
+    - It helps to favor composition over inheritance.
+    - Recursive wrapping of objects.
+    - Good alternative to subclassing for extending functionality. 
 
