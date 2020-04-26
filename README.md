@@ -2,7 +2,8 @@
 This project demonstrates common design patterns and object oriented programming principles with examples.
 
 ## Behavioral Patterns:
-Common communication pattern between objects.
+Common Communication/Interaction pattern between objects.
+
 * Chain of Responsibility: 
     - Execute tasks in chain to process a request.
 * Memento: 
@@ -19,17 +20,26 @@ Common communication pattern between objects.
     - Super class template method defines skeleton of algorithm. 
     - Child classes implement/override specific tasks as required.
 * Command:
-    - No dependency between Client/Sender and Receiver
-    - The command object encapsulates all information required to perform an action
-    - Record all actions(queue) and run it once - Composite Command
-    - To implement undo mechanism
+    - No dependency between Client/Sender and Receiver.
+    - The command object encapsulates all information required to perform an action.
+    - Record all actions(queue) and run it once - Composite Command.
+    - To implement undo mechanism.
 * Observer:
-    - Notify changes to any number of classes
-    - Publisher Subscriber relationship
+    - Notify changes to any number of classes.
+    - Publisher Subscriber relationship.
 * Mediator:
-    - A mediator to manage communication between all classes
-    - Helps to manage many to many relationship between classes
+    - A mediator to manage communication between all classes.
+    - Helps to manage many to many relationship between classes.
 * Visitor:
-    - Abstract operation/functionality that should be applied to hierarchy of objects
-    - New functionality will go to new operation class instead of modifying existing class
+    - Abstract operation/functionality that should be applied to hierarchy of objects.
+    - New functionality will go to new operation class instead of modifying existing class.
+
+## Structural Patterns:
+Common patterns to simplify Relationship between objects.
+
+* Composite:
+    - To represent a hierarchy and treat the objects in the hierarchy in same way.
+    - eg. Folder is collection of file and another folder can be collection of folders. 
+    - eg. Deleting folder deletes all in its hierarchy
+    - Recursive Composition
 
