@@ -53,4 +53,8 @@ Common patterns to simplify Relationship between objects.
 * Facade:
     - To provide simple interface (as a face) for complex system.
     - Defines higher level interface to make system easy to use.
+*Flyweight:
+    - Reduce the amount of memory consumed by heavy weight objects.
+    - Flyweight is the heavy object that can be shared.
+    - Heavy weight object is created using Factory/Cache pattern.
 
