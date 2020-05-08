@@ -31,8 +31,9 @@ Common Communication/Interaction pattern between objects.
     - A mediator to manage communication between all classes.
     - Helps to manage many to many relationship between classes.
 * Visitor:
-    - Abstract operation/functionality that should be applied to hierarchy of objects.
-    - New functionality will go to new operation class instead of modifying existing class.
+    - Allows to add operations to object structure without modifying it.
+    - New functionality will go to new abstracted operation class instead of modifying existing class.
+    - eg. Adding a new operation to existing HTML node structure
 
 ## Structural Patterns:
 Common patterns to simplify Relationship between objects.
@@ -44,7 +45,7 @@ Common patterns to simplify Relationship between objects.
     - Recursive Composition.
 * Adapter:
     - To convert interface of an object to different form.
-    - Lets objects work together who have incompatible interfaces.
+    - Enables objects to work together who have incompatible interfaces.
 * Decorator:
     - Add additional behaviour or responsibility to an object.
     - It helps to favor composition over inheritance.
@@ -53,8 +54,13 @@ Common patterns to simplify Relationship between objects.
 * Facade:
     - To provide simple interface (as a face) for complex system.
     - Defines higher level interface to make system easy to use.
-*Flyweight:
+* Flyweight:
     - Reduce the amount of memory consumed by heavy weight objects.
     - Flyweight is the heavy object that can be shared.
     - Heavy weight object is created using Factory/Cache pattern.
+* Bridge:
+    - Feature/Interface in one hierarchy and implementation in another hierarchy.
+    - Helps to connect two complete independent hierarchies.
+    - Growth of one hierarchy will not impact the other.
+
 
