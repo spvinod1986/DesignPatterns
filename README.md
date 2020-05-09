@@ -62,5 +62,8 @@ Common patterns to simplify Relationship between objects.
     - Feature/Interface in one hierarchy and implementation in another hierarchy.
     - Helps to connect two complete independent hierarchies.
     - Growth of one hierarchy will not impact the other.
+* Proxy:
+    - Agent or place holder for real object.
+    - Prevents instantiation of heavy weight objects until it is really required.
 
 
