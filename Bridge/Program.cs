@@ -6,15 +6,12 @@ namespace Bridge
     {
         static void Main(string[] args)
         {
-            var iPhoneFramework = new XamarinUIControl(new IphoneKit());
+            var iPhoneFramework = new XamarinButtonControl(new IphoneKit());
             iPhoneFramework.AddButton();
-            iPhoneFramework.AddCheckBox();
-            iPhoneFramework.AddLabel();
-            
-            var androidFramework = new XamarinUIControl(new AndroidKit());
+
+            var androidFramework = new XamarinButtonControl(new AndroidKit());
             androidFramework.AddButton();
-            androidFramework.AddCheckBox();
-            androidFramework.AddLabel();
+
         }
     }
 }
