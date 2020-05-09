@@ -1,3 +1,5 @@
+using System;
+
 namespace Bridge
 {
     public class AndroidKit : IMobileDevelopmentKit
@@ -9,11 +11,11 @@ namespace Bridge
         }
         public void AddCheckBox()
         {
-            System.Console.WriteLine("Created Android CheckBox Control");
+            throw new NotImplementedException();
         }
         public void AddLabel()
         {
-            System.Console.WriteLine("Created Android Label Control");
+            throw new NotImplementedException();
         }
     }
 }
