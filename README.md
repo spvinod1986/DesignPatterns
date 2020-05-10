@@ -1,6 +1,31 @@
 # Design Patterns
 This project demonstrates common design patterns and object oriented programming principles with examples.
 
+## Core Principles of Object Oriented Programming:
+* Encapsulation:
+    - Hide internal representation (or) state of an object.
+    - Bundling of data and methods operating on the data to one object.
+    - Controls and restricts access to object attributes using access modifiers.
+    - Enables validation before changing value of an object attribute.
+    - eg: Bank account exposes balance to read and not for write.
+    - eg: Balance can be updated (write) only by Credit or Debit methods.
+* Abstraction:
+    - Reduce complexity by hiding unneccesary details.
+    - eg: Stream object in C# exposes Read method to read datastreams in network.
+    - eg: It hides complexity and we can use that method without knowing internal details.  
+* Inheritance:
+    - Mechanism for reusing code.
+    - Child object inherits public/protected/internal trait of parents.
+    - Parent and Child objects share common behaviour.
+    - eg: In C#, all types in C# inherit from Object or type derived from it.
+* Polymorphism:
+    - Ability of an object to take on many forms.
+    - One object can possess different behaviour.
+    - One interface can have multiple implementations.
+    - Compile time polymorphism -> Function and Operator overloading.
+    - Run time polymorphism -> Function overriding. Commonly referred as Polymorphism.
+    - eg: In C#, .ToString() can behave differently based on object implementation.
+
 ## Behavioural Patterns:
 Common Communication/Interaction pattern between objects.
 
@@ -65,5 +90,17 @@ Common patterns to simplify Relationship between objects.
 * Proxy:
     - Agent or place holder for real object.
     - Prevents instantiation of heavy weight objects until it is really required.
+
+## Creational Patterns:
+Common patterns that deal with object creation.
+
+* Factory:
+    - 
+* Abstract Factory:
+    - 
+* Builder:
+    - 
+* Singleton:
+    - 
 
 
